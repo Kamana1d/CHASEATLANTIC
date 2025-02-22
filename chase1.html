@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHASE ATLANTIC</title>
+    <style>
+        *{
+            background-image: url('https://i.pinimg.com/736x/4b/4e/f7/4b4ef76ec04882b1d2fa662964d68d52.jpg');
+            background-repeat:no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+        body {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #222;
+            color: white;
+            background:rgba(0,0,0,0.5);
+          /*  background-image: url('https://i.pinimg.com/736x/4b/4e/f7/4b4ef76ec04882b1d2fa662964d68d52.jpg');
+            background-repeat:no-repeat;
+            background-attachment: fixed;
+            background-size: cover;*/
+        }
+
+        header {
+            background-color: #1d1d1d;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color:#a2a7cc;
+            text-decoration:underline;
+            font-size: 1.2rem;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        #bio img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        #tour-dates ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #tour-dates ul li {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+
+        #gallery .gallery-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        #gallery img {
+            width: 45%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #1d1d1d;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+
+        button {
+            background-color: #00bcd4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0097a7;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="box-sizing: content-box;">This is Chase Atlantic!</h1>
+        <nav>
+            <ul>
+                <li><a href="#bio">Home</a></li>
+                <li><a href="#tour-dates">Tour Dates</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#audio" target="_blank">Tracks</a> </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="bio">
+        <h2 style="text-decoration: underline;">About the Band</h2>
+        <p>Chase Atlantic is an Australian music band known for their unique blend of alternative R&B, electronic, and rock music. The band formed in 2011 and has rapidly gained a dedicated fanbase worldwide.</p>
+        <p>The band consists of three members: Christian Anthony and brothers Mitchel and Clinton Cave, and have released seven EPs and four albums since their formation. They are best known for their 2017 hit single, "Swim"</p>
+        <p>According to the band, their style is "conjured up dark alternative pop punctuated by rock and R&B". Throughout their four years of making music, their music style has changed from an alternative pop sound to a more alternative R&B sound. Their influences include Tame Impala, the Weeknd, the 1975 and The Neighbourhood.</p>
+        <img src="data:image/jpeg;base64,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" alt="Chase Atlantic Band">
+        
+    </section>
+
+    <section id="audio">
+        <h2 style="text-decoration: underline;">Listen to our Tracks</h2>
+        <a href="https://open.spotify.com/track/1JdQibdvxgcrB8Rv1KFndw?si=013a233819d3474e" target="_blank">
+           <audio controls>
+            <source src="c:\Users\patid\Downloads\swin.html.mp3" type="audio/mpeg">
+           
+        </audio><br><br>
+        <audio controls >
+            <source src="c:\Users\patid\Downloads\Chase Atlantic - HEAVEN AND BACK (Lyrics).mp3" type="audio/mpeg">
+        </audio>
+            
+        </a>
+    </section>
+
+    <section id="tour-dates">
+        <h2 style="text-decoration: underline;">Upcoming Events</h2>
+        <ul>
+            <li>March 15, 2025 - Los Angeles, CA - The Forum</li>
+            <li>March 18, 2025 - New York, NY - Madison Square Garden</li>
+            <li>March 22, 2025 - Chicago, IL - United Center</li>
+            <li>March 25, 2025 - Toronto, Canada - Rogers Centre</li>
+        </ul>
+    </section>
+
+    <section id="gallery">
+        <h2 style="text-decoration: underline;">Past Performances</h2>
+        <div class="gallery-images">
+            <img src="data:image/jpeg;base64,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" alt="Performance 1">
+            <img src="https://i.pinimg.com/474x/2d/8f/38/2d8f38c035728dd5a72751b946a44ad1.jpg" alt="Performance 2">
+            <img src="https://i.pinimg.com/474x/5e/f7/a5/5ef7a57356c242b301c5874bce7b3335.jpg" alt="Performance 3">
+            <img src="https://i.pinimg.com/474x/67/2a/13/672a1381972f4d4da5fa7d40a7422a2e.jpg" alt="Performance 4">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Chase Atlantic. All rights reserved.| Folow us on social media:
+            <a href="https://x.com/chaseatlantic?lang=en" target="_blank" style="color:white">Twitter |</a>
+            <a href="https://instagram.com/chaseatlantic" target="_blank" style="color:white" >Instagram |</a>
+            <a href="https://www.youtube.com/channel/UCpvCJWgUNwZArGtJ00kDS1A" target="_blank" style="color:white">YouTube</a>
+        </p>
+    </footer>
+
+    <script>
+        // Open audio link in a new tab when the button is clicked
+        document.querySelector('button').addEventListener('click', function() {
+            window.open("https://link-to-audio-file.com", "_blank");
+        });
+    </script>
+</body>
+</html>
+<!--c:\Users\patid\Downloads\Chase Atlantic - Swim [LYRICS].mp3 2025 Band Name. All Rights Reserved. | Follow us on social media: Facebook | Instagram | Twitter -->
